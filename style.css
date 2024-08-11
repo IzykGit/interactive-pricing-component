@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-image: url(./images/bg-pattern.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    gap: 5rem;
+    margin-top: -3.5rem;
+
+
+    height: 100vh;
+    font-family: "Manrope", sans-serif;
+
+    background-color: hsl(230, 100%, 99%);
+}
+
+
+header {
+    text-align: center;
+
+    background-image: url(./images/pattern-circles.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    height: 10rem;
+
+    transform: translateY(2.5rem);
+}
+
+header > * {
+    margin: 0;
+}
+
+header > h1 {
+    font-size: 1.8rem;
+}
+
+header > p {
+    color: hsl(227, 35%, 25%);
+}
+
+
+main {
+    width: 33.5rem;
+    height: 25rem;
+
+    border: 1px solid black;
+    background-color: white;
+
+    padding: 2.85rem 2.5rem;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    
+    gap: 2rem;
+}
+
+
+
+.package {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+    height: 3rem;
+}
+
+.package > h2 {
+    font-size: 2.2rem;
+    display: flex;
+    align-items: center;
+    color: hsl(227, 35%, 25%);
+}
+
+.package > h2 > small {
+    font-size: 15px;
+    margin-left: 15px;
+
+    letter-spacing: 2px;
+}
+
+.package > p {
+    text-transform: uppercase;
+    color: hsl(225, 20%, 60%);
+    font-weight: 600;
+    letter-spacing: 2px;
+
+    font-size: 15px;
+}
+
+
+
+
+
+
+.slider {
+    -webkit-appearance: none;
+    appearance: none;
+
+
+    width: 100%;
+    height: 0.5rem; 
+    background: #d3d3d3;
+
+    outline: none;
+    opacity: 0.7;
+
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+
+    border-radius: 1rem;
+    background-color: hsl(174, 86%, 45%);
+
+    background: linear-gradient(to right, hsl(174, 86%, 45%) 0%, #d3d3d3 0%);
+}
+
+
+.slider:hover {
+    opacity: 1; 
+}
+  
+
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 2rem;
+    height: 2rem;
+    background: #04AA6D; 
+    cursor: pointer; 
+
+    border-radius: 1rem;
+}
+  
+.slider::-moz-range-thumb {
+    width: 2.5rem;
+    height: 2.5rem;
+    background: #04AA6D; 
+    cursor: pointer; 
+
+    border-radius: 100%;
+
+    background-image: url(./images/icon-slider.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+.billings {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+    gap: 1rem;
+}
+
+
+.billings > p {
+    font-size: 15px;
+    color: hsl(227, 35%, 25%);
+}
+  
+
+.indicator {
+    width: 2.5rem;
+    height: 1.5rem;
+
+    border-radius: 1rem;
+    background-color: hsl(223, 50%, 87%);
+
+    padding: 0.25rem;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+
+    cursor: pointer;
+    justify-content: flex-end;
+}
+
+.monthly {
+    width: 2.5rem;
+    height: 1.5rem;
+
+    border-radius: 1rem;
+    background-color: hsl(223, 50%, 87%);
+
+    padding: 0.25rem;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    cursor: pointer;
+}
+
+.indicator > div {
+    width: 1rem;
+    height: 1rem;
+    background-color: white;
+
+    border-radius: 100%;
+}
+
+
+.discount {
+    padding: 0.25rem 0.25rem;
+    border-radius: 1rem;
+    background-color: hsl(14, 92%, 95%);
+    color: hsl(15, 100%, 70%);
+
+    font-size: 0.75rem;
+    font-weight: 700;
+
+    margin-left: 0.25rem;
+}
